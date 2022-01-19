@@ -49,8 +49,7 @@
 		"webpack-cli": "^4.9.1"
 	},
 	"scripts": {
-		"build": "wp-scripts build assets/src/frontend.js assets/src/blocks.js --output-path=assets/build",
-		"start": "wp-scripts start assets/src/frontend.js assets/src/blocks.js --output-path=assets/build",
+		"build": "wp-scripts build assets/src/frontend.js --output-path=assets/build",
 		"packages-update": "wp-scripts packages-update"
 	}
 }

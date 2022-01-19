@@ -1,8 +1,0 @@
-{
-	"apiVersion": 2,
-	"name": "smc-textdomain/page-container",
-	"title": "Page Container",
-	"category": "design",
-	"description": "Wraps inner blocks with the page width classes",
-	"textdomain": "smc-textdomain"
-}

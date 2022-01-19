@@ -1,9 +1,0 @@
-{
-	"apiVersion": 2,
-	"name": "smc-textdomain/contact-form",
-	"title": "Contact Form",
-	"category": "widgets",
-	"description": "Contact Form",
-	"textdomain": "smc-textdomain",
-	"attributes": { "padding": { "type": "integer", "default": 0 } }
-}
