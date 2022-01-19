@@ -1,0 +1,11 @@
+{
+	"apiVersion": 2,
+	"name": "smc-textdomain/fullwidth",
+	"title": "Full width",
+	"category": "design",
+	"description": "Full width block",
+	"textdomain": "smc-textdomain",
+	"attributes": {
+		"background": { "type": "string" }
+	}
+}

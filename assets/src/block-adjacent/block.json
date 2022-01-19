@@ -1,0 +1,12 @@
+{
+	"apiVersion": 2,
+	"name": "smc-textdomain/adjacent",
+	"title": "Adjacent Squares",
+	"category": "design",
+	"description": "Full width, side-by-side informational blocks",
+	"textdomain": "smc-textdomain",
+	"attributes": {
+		"background": { "type": "integer" },
+		"position": { "type": "integer", "default": 0 }
+	}
+}

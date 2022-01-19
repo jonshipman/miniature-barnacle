@@ -1,0 +1,86 @@
+@use 'sass:math';
+
+@mixin tachyons-prop( $selector ) {
+	#{$selector} {
+		@content;
+	}
+
+	@media #{$breakpoint-not-small} {
+		#{$selector}-ns {
+			@content;
+		}
+	}
+
+	@media #{$breakpoint-medium} {
+		#{$selector}-m {
+			@content;
+		}
+	}
+
+	@media #{$breakpoint-large} {
+		#{$selector}-l {
+			@content;
+		}
+	}
+}
+
+@mixin tachyons-color-gen( $classBase, $color ) {
+	.b--#{$classBase} {
+		border-color: $color;
+	}
+
+	.#{$classBase} {
+		color: $color;
+	}
+
+	@include tachyons-prop( '.bg-#{$classBase}' ) {
+		background-color: $color;
+	}
+
+	.hover-#{$classBase} {
+
+		&:focus,
+		&:hover {
+			color: $color;
+		}
+	}
+
+	.hover-bg-#{$classBase} {
+
+		&:focus,
+		&:hover {
+			background-color: $color;
+		}
+	}
+
+	.stroke-#{$classBase} {
+		stroke: $color;
+	}
+
+	.hover-stroke-#{$classBase} {
+
+		&:focus,
+		&:hover {
+			stroke: $color;
+		}
+	}
+
+	.fill-#{$classBase} {
+		fill: $color;
+	}
+
+	.hover-fill-#{$classBase} {
+
+		&:focus,
+		&:hover {
+			fill: $color;
+		}
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

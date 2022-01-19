@@ -1,0 +1,28 @@
+/*
+
+  OBJECT
+  Custom
+
+  Classes for object fit.
+
+*/
+
+@include tachyons-prop('.object-cover') {
+	object-fit: cover;
+}
+
+@include tachyons-prop('.object-contain') {
+	object-fit: contain;
+}
+
+@include tachyons-prop('.object-fill') {
+	object-fit: fill;
+}
+
+@include tachyons-prop('.object-sd') {
+	object-fit: scale-down;
+}
+
+@include tachyons-prop('.object-none') {
+	object-fit: none;
+}

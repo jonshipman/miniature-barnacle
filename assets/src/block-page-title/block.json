@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "smc-textdomain/page-title",
+	"title": "Page Title",
+	"category": "design",
+	"description": "Automatically renders the page title as an H1",
+	"textdomain": "smc-textdomain",
+	"usesContext": ["postId", "postType", "queryId"],
+	"attributes": {
+		"background": { "type": "string" },
+		"opacity": {
+			"type": "integer"
+		}
+	}
+}

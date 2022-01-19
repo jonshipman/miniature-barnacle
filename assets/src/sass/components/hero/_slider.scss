@@ -1,0 +1,64 @@
+.wp-block-smc-textdomain-hero {
+	strong {
+		color: $primary;
+		font-style: italic;
+	}
+
+	.slider-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.slider {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.slides {
+		display: flex;
+		overflow-x: scroll;
+		position: relative;
+		scroll-behavior: smooth;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+
+	.slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		width: 100%;
+		margin-right: 0px;
+		box-sizing: border-box;
+		transform-origin: center center;
+		transform: scale(1);
+		scroll-snap-align: center;
+	}
+
+	.slider__nav {
+		box-sizing: border-box;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		width: 200px;
+		margin-left: -100px;
+		text-align: center;
+	}
+
+	.slider__navlink {
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		background-color: $white;
+		margin: 0 10px 0 10px;
+	}
+}

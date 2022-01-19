@@ -1,0 +1,17 @@
+{
+	"apiVersion": 2,
+	"name": "smc-textdomain/hero",
+	"title": "Hero",
+	"category": "design",
+	"description": "Full Height Hero",
+	"textdomain": "smc-textdomain",
+	"attributes": {
+		"backgrounds": {
+			"type": "array",
+			"default": [{}]
+		},
+		"opacity": {
+			"type": "integer"
+		}
+	}
+}

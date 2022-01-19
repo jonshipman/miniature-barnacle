@@ -1,0 +1,55 @@
+{
+	"extends": ["plugin:@wordpress/eslint-plugin/recommended-with-formatting"],
+	"env": {
+		"browser": true
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
+	},
+	"rules": {
+		"max-len": [
+			"error",
+			{
+				"ignoreTrailingComments": true,
+				"ignoreUrls": true,
+				"tabWidth": 2,
+				"ignoreStrings": true,
+				"code": 80
+			}
+		],
+		"react/jsx-wrap-multilines": [
+			"error",
+			{
+				"declaration": "parens-new-line",
+				"assignment": "parens-new-line",
+				"return": "parens-new-line",
+				"arrow": "parens-new-line",
+				"condition": "ignore",
+				"logical": "ignore",
+				"prop": "ignore"
+			}
+		],
+		"react/jsx-max-props-per-line": [
+			"error",
+			{ "maximum": { "single": 2, "multi": 1 } }
+		],
+		"react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
+		"react/jsx-closing-tag-location": ["error", "always"],
+		"react/jsx-closing-bracket-location": ["error", "line-aligned"],
+		"object-curly-newline": [
+			"error",
+			{
+				"ObjectExpression": { "consistent": true },
+				"ObjectPattern": { "consistent": true },
+				"ExportDeclaration": { "consistent": true }
+			}
+		],
+		"object-property-newline": [
+			"error",
+			{ "allowAllPropertiesOnSameLine": true }
+		],
+		"yoda": ["error", "never", { "onlyEquality": true }]
+	}
+}
